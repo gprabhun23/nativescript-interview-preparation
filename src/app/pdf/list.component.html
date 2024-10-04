@@ -1,0 +1,19 @@
+<ActionBar class="parent-background">
+    <StackLayout style="width: 100%;">
+        <Label text="INTERVIEW PREPARATION" class="action-bar-title" fontSize="25"></Label>
+    </StackLayout>
+</ActionBar>
+
+
+<GridLayout class="parent-background" rows="auto, *">
+  
+    <ListView [items]="items" (itemTap)="onItemTap($event)" width="100%" height="100%">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <GridLayout class="list-view" (touchStart)="setActive(true)"
+                (touchEnd)="setActive(false)">
+                <Label [text]="item.name" class="list-group-item"></Label>
+            </GridLayout>
+        </ng-template>
+    </ListView>
+
+</GridLayout>

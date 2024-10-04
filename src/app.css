@@ -1,0 +1,105 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+/* ActionBar Background Gradient */
+ActionBar {
+    height: 100;
+    /* Adjust height */
+}
+
+ActionBar .gradient-background {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* Gradient for Android */
+    height: 100%;
+    padding-top: 20px;
+}
+
+/* Custom title styling */
+ActionBar .action-bar-title {
+    color: rgb(65, 4, 105, 0.9);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* iOS Platform Specific Styling */
+@media (platform: ios) {
+    ActionBar .gradient-background {
+        background-image: -webkit-linear-gradient(left, #ff7e5f, #feb47b);
+        /* Gradient for iOS */
+    }
+
+    ActionBar .action-bar-title {
+        color: rgb(65, 4, 105);
+    }
+}
+
+.parent-background {
+    border-radius: 10px;
+    background: #474bff;
+    color: white;
+    background: -webkit-linear-gradient(0deg, #474bff 0%, #bc48ff 80%);
+    background: linear-gradient(0deg, #474bff 0%, #bc48ff 80%);
+}
+
+.list-group-item {
+    font-size: 20px;
+}
+
+.list-view {
+    background: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent white */
+    border-radius: 20;
+    /* Rounded corners */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* Light border */
+    padding: 10;
+    /* Padding for inner elements */
+    box-shadow: 0 4 6 rgba(0, 0, 0, 0.1);
+    /* Optional shadow for depth */
+    margin: 10;
+    /* Spacing around the glass effect */
+}
+
+.list-view.active {
+    background: rgba(255, 255, 255, 0.5);
+    /* Change to a lighter semi-transparent color */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* Darker border for active state */
+    color: #000;
+}
+
+.centered-label {
+    font-size: 20;
+    /* Adjust the font size as needed */
+    color: #000;
+    /* Set the text color */
+    padding: 10;
+    /* Add some padding around the label */
+}
+
+.custom-action-bar {
+    background-color: #007AFF;
+    /* Example background color */
+    height: 56;
+    /* Height similar to iOS ActionBar */
+    justify-content: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center text horizontally */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Initial opacity */
+    }
+    100% {
+        opacity: 1; /* Final opacity */
+    }
+}
+
+.list-item {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s forwards; /* Use the fadeIn animation */
+    background-color: yellow; /* Debugging */
+}

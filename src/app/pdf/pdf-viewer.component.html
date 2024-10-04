@@ -1,0 +1,12 @@
+<ActionBar class="parent-background">
+  <StackLayout style="width: 100%; text-align: center;">
+    <GridLayout width="100%" verticalAlignment="center">
+      <Label [text]="title" class="action-bar-title centered-label" textAlignment="center" fontSize="25"
+        horizontalAlignment="center">
+      </Label>
+    </GridLayout>
+  </StackLayout>
+</ActionBar>
+<GridLayout columns="*" rows="auto, *" class="parent-background">
+  <PDFView flexGrow="1" [src]="pdfUrl" width="100%" height="100%"></PDFView>
+</GridLayout>
