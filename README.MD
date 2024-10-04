@@ -12,12 +12,13 @@ This **NativeScript Interview Preparation** app provides an organized set of int
 ## Screenshots
 
 ### Main Page
-![Main Page](./interview-prep-1.png)
+![Main Page](https://github.com/user-attachments/assets/99f60109-3c3d-4478-b362-f6050faf442c)
+
 
 This screen allows users to choose from various topics such as Angular, C#, OOPs, SQL, and more. Users can pick any of these topics to start preparing.
 
 ### Angular Section
-![Angular Section](./interview-prep-2.png)
+![Angular Section](https://github.com/user-attachments/assets/f8975a94-ffe2-43b6-a279-aff4d3b8121d)
 
 This is the **Angular** section, where users can explore detailed questions on Angular. The questions cover everything from basic concepts to advanced Angular features, including data-binding, components, directives, services, dependency injection, and more.
 
